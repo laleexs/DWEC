@@ -9,4 +9,6 @@ logo.addEventListener("click", function() {
     paragraphs.style.display = "inline-block";
 });
 
+// segun el profesor el script esta correcto pero mi navegador no oculta la clase nutrition
+
 
