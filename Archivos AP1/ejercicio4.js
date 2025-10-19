@@ -1,15 +1,15 @@
 
-let paragraphs = document.getElementsByClassName("nutrition")[0];
+let paragraph = document.getElementsByClassName("nutrition")[0];
 
 let logo = document.getElementsByTagName("img")[0];
 
-paragraphs.style.display = "none";
+paragraph.style.display = "none";
 
 logo.addEventListener('click', function() {
-  if (paragraphs.style.display === "none") {
-    paragraphs.style.display = "block"; // mostrar la lista
+  if (paragraph.style.display === "none") {
+    paragraph.style.display = "block"; // mostrar la lista
   } else {
-    paragraphs.style.display = "none";  // ocultar la lista
+    paragraph.style.display = "none";  // ocultar la lista
   }
 });
 
