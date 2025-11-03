@@ -81,7 +81,7 @@ series.insertAdjacentElement('afterend', movies);
 function crearImagen(src) {
   let divImg = document.createElement("div");
   divImg.setAttribute("class", "img");
-  divImg.width = "250px"
+  divImg.style.width = "250px"
   divImg.style.display = "none";
 
   let img = document.createElement("img");
@@ -231,7 +231,7 @@ function moverPersonaje(direccion) {
       personajeIndex = totalPersonajes - 1; // volvemos al último
     }
   }
-  itemIndex = 0;
+  
   mostrar();   // actualizamos lo que se ve
 }
 
