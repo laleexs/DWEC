@@ -13,7 +13,8 @@ const changePhotos = (opacity, dimensions) => {
 [3700, 4000, 4400, 4800].map((element, index) => {
     setTimeout(() =>{
         (index % 2 === 0) ? changePhotos('50%', '105%'): changePhotos('100%', '100%'); // al ser un operador ternario no lleva el if , si se da la condicion lo primero si no, lo segundo
-
-        
+        (index === 3) && Array.from(photo).map((element, index) =>{ // que cuando el indice sea igual al ultimo elemento del array del map y pase el el evento en alguna de las fotos
+            element.addEventListener('click', deletePhotos(index)); // entonces se da la condicion del evento y se llama a la funcion deletephotos mediante un click que es del ejercicio 4
+        });
     }, element)
 })
